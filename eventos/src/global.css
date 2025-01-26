@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primary: #2D2D2D;
+    --color-offwhite: #E4E4E4;
+    --color-greenhighlight: #C8FD2C;
+    --font-roboto: "Roboto", serif;
+    --font-size-xxs: 0.688rem;
+    --height-10v: 10vh;
+    --height-20v: 20vh;
+    --height-30v: 30vh;
+    --height-35v: 35vh;
+    --height-40v: 40vh;
+    --height-50v: 50vh;
+    --height-60v: 60vh;
+    --height-70v: 70vh;
+    --height-75v: 75vh;
+    --height-80v: 80vh;
+    --height-90v: 90vh;
+    --height-100v: 100vh;
+    --width-4v: 4.3vw;
+    --width-5v: 5vw;
+    --width-10v: 10vw;
+    --width-12v: 12vw;
+    --width-14v: 14vw;
+    --width-15v: 15vw;
+    --width-20v: 20vw;
+    --width-30v: 30vw;
+    --width-35v: 35vw;
+    --width-40v: 40vw;
+    --width-43v: 43vw;
+    --width-50v: 50vw;
+    --width-60v: 60vw;
+    --width-70v: 70vw;
+    --width-75v: 75vw;
+    --width-80v: 80vw;
+    --width-85v: 85vw;
+    --width-90v: 90vw;
+    --width-95v: 95.7vw;
+    --width-100v: 100vw;
+    --animation-fade: fadeIn 0.5s ease-in-out;
+    --animation-pulse: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
