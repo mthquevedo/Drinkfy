@@ -16,6 +16,10 @@ export default function App() {
   const hour: number = currentDate.getHours();
   const minutes: number = currentDate.getMinutes();
 
+  const onLogin = () => {
+    location.replace("/eventos")
+  }
+
   return (
     <main
       className="font-(family-name:--font-roboto) flex flex-col bg-(--color-primary) w-lvw h-lvh px-8 py-13 overflow-hidden justify-between"
@@ -47,7 +51,10 @@ export default function App() {
           <button className="py-3 px-8 text-neutral-300 bg-neutral-400/20 border-2 border-neutral-100 rounded-full">
             Cadastrar
           </button>
-          <button className="py-3 px-19 text-(--color-primary) font-medium bg-(--color-greenhighlight) rounded-full">
+          <button
+            className="py-3 px-19 text-(--color-primary) font-medium bg-(--color-greenhighlight) rounded-full active:bg-(--color-greenhighlightactive)"
+            onClick={onLogin}
+          >
             Entrar
           </button>
         </div>
