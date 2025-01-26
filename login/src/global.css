@@ -1,10 +1,11 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color-primary: #2D2D2D;
     --color-offwhite: #E4E4E4;
     --color-greenhighlight: #C8FD2C;
-    --font-family-poppins: 'Poppins', sans-serif;
+    --font-roboto: "Roboto", serif;
     --font-size-xxs: 0.688rem;
     --height-10v: 10vh;
     --height-20v: 20vh;
