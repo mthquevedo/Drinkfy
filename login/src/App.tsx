@@ -20,7 +20,7 @@ export default function App() {
   }
 
   return (
-    <body
+    <div
       className="font-(family-name:--font-roboto) flex flex-col bg-(--color-primary) w-lvw h-lvh px-8 py-13 overflow-hidden justify-between"
     >
       <header className="flex items-center justify-between text-white text-xl w-full">
@@ -58,8 +58,6 @@ export default function App() {
           </button>
         </div>
       </footer>
-
-
-    </body>
+    </div>
   )
 }

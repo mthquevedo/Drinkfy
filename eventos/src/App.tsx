@@ -6,7 +6,7 @@ export default function App() {
   }
 
   return (
-    <body
+    <div
       className="font-(family-name:--font-roboto) flex flex-col w-lvw h-lvh px-8 py-13 overflow-hidden justify-between"
     >
       <header className="flex items-center justify-between w-full">
@@ -87,6 +87,6 @@ export default function App() {
           Conferir eventos anteriores
         </button>
       </footer>
-    </body>
+    </div>
   );
 }
