@@ -61,6 +61,7 @@
     "intl": "^1.2.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^5.4.0",
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1"
   },
