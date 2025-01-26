@@ -1,6 +1,10 @@
 import Notification from "./assets/filled-appointment-reminders.png"
 
 export default function App() {
+  const onCheckIn = () => {
+    location.replace("/produtos")
+  }
+
   return (
     <body
       className="font-(family-name:--font-roboto) flex flex-col w-lvw h-lvh px-8 py-13 overflow-hidden justify-between"
@@ -28,6 +32,7 @@ export default function App() {
             <div className="flex items-center justify-end">
               <button
                 className="py-1 px-4 text-(--color-primary) text-sm font-medium bg-(--color-greenhighlight) rounded-full active:bg-(--color-greenhighlightactive)"
+                onClick={onCheckIn}
               >
                 Check-in
               </button>

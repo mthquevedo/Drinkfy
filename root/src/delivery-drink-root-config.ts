@@ -12,6 +12,12 @@ registerApplication({
   activeWhen: (location) => location.pathname === "/eventos",
 });
 
+registerApplication({
+  name: '@delivery-drink/produtos',
+  app: () => System.import<LifeCycles>('@delivery-drink/produtos'),
+  activeWhen: (location) => location.pathname === "/produtos",
+});
+
 start({
   urlRerouteOnly: true,
 });
