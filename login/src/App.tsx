@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { DateTimeFormatOptions } from "intl";
 import Logo from "./assets/logo.png";
 import Banner from "./assets/undraw_delivery-address_409g.png";
 
@@ -21,17 +20,17 @@ export default function App() {
   }
 
   return (
-    <main
+    <body
       className="font-(family-name:--font-roboto) flex flex-col bg-(--color-primary) w-lvw h-lvh px-8 py-13 overflow-hidden justify-between"
     >
-      <div className="flex items-center justify-between text-white text-xl w-full">
+      <header className="flex items-center justify-between text-white text-xl w-full">
         <img src={Logo} alt="Logo" className="w-26 h-auto" />
         <p>
           {hour < 10 ? `0${hour}` : hour} : {minutes < 10 ? `0${minutes}` : minutes}
         </p>
-      </div>
+      </header>
 
-      <div className="flex flex-col">
+      <main className="flex flex-col">
         <div className="flex items-center justify-center flex-auto h-114 bg-white rounded-3xl overflow-hidden mb-8">
           <img src={Banner} alt="Banner" className="w-full h-auto" />
         </div>
@@ -42,9 +41,9 @@ export default function App() {
 
         <p className="text-neutral-400">Com apenas alguns cliques peça sua bebida de
           qualquer parte do evento, nós iremos até você.</p>
-      </div>
+      </main>
 
-      <div>
+      <footer>
         <p className="text-sm text-white mb-7">Continuar como <strong>Matheus</strong> ou utilizar uma nova conta?</p>
 
         <div className="flex items-center justify-between">
@@ -58,9 +57,9 @@ export default function App() {
             Entrar
           </button>
         </div>
-      </div>
+      </footer>
 
 
-    </main>
+    </body>
   )
 }
