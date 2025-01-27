@@ -1,0 +1,4 @@
+{
+  "extends": ["ts-react-important-stuff"],
+  "css.lint.unknownAtRules": "ignore"
+}

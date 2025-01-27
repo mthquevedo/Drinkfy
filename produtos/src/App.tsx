@@ -1,9 +1,9 @@
 import Notification from "./assets/filled-appointment-reminders.png"
 import StoreCards from "./components/StoreCards";
 import { IoIosSearch } from "react-icons/io";
+import Parcel from "single-spa-react/parcel"
 
 export default function App() {
-
   return (
     <div
       className="font-(family-name:--font-roboto) flex flex-col w-lvw h-lvh px-8 py-13 overflow-hidden justify-between"
@@ -31,13 +31,11 @@ export default function App() {
         <StoreCards />
       </main>
 
-      <footer>
-        <button
-          className="py-3 w-full text-(--color-primary) font-medium bg-(--color-greenhighlight) rounded-full active:bg-(--color-greenhighlightactive)"
-        >
-          Ir ao carrinho
-        </button>
-      </footer>
+      <Parcel
+        config={() =>
+          System.import("@delivery-drink/carrinho").then((module) => module.default || module)
+        }
+      />
     </div>
   );
 }
