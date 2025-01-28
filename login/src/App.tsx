@@ -47,8 +47,8 @@ export default function App() {
         <p className="text-sm text-white mb-7">Continuar como <strong>Matheus</strong> ou utilizar uma nova conta?</p>
 
         <div className="flex items-center justify-between">
-          <button className="py-3 px-8 text-neutral-300 bg-neutral-400/20 border-2 border-neutral-100 rounded-full">
-            Cadastrar
+          <button className="py-3 px-11 text-neutral-300 bg-neutral-400/20 border-2 border-neutral-100 rounded-full">
+            Alterar
           </button>
           <button
             className="py-3 px-19 text-(--color-primary) font-medium bg-(--color-greenhighlight) rounded-full active:bg-(--color-greenhighlightactive)"
